@@ -47,7 +47,7 @@ Backend:
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/andersonfae/tagme.git
 ```
 
 ## Configuração de Backend
