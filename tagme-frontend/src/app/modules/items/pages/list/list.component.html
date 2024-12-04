@@ -1,0 +1,49 @@
+<div class="item-list">
+  <img src="assets/tagme-svg.svg" alt="Logo da Empresa" class="logo" />
+
+  <h2>Lista de Itens</h2>
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/create']"
+    class="create-button"
+  >
+    Criar Novo Item
+  </button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Foto</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.title }}</td>
+        <td>{{ item.description }}</td>
+        <td>
+          <img [src]="item.photoUrl" alt="Foto do Item" class="item-photo" />
+        </td>
+        <td>
+          <button
+            mat-raised-button
+            class="edit-button"
+            [routerLink]="['/edit', item.id]"
+          >
+            Editar
+          </button>
+          <button
+            mat-raised-button
+            class="delete-button"
+            (click)="onDelete(item.id)"
+          >
+            Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

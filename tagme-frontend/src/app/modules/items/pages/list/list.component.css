@@ -1,0 +1,90 @@
+/* Layout Principal */
+.item-list {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #294f4e;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+}
+
+/* Título */
+.item-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: rgba(255, 90, 0, 0.8);
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+  color: #fff;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Imagem */
+.item-photo {
+  border-radius: 4px;
+  max-width: 80px;
+  height: auto;
+}
+
+/* Botões */
+button {
+  margin: 5px 0;
+}
+
+.create-button {
+  background-color: #ff5a00;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.edit-button {
+  background-color: #ff5a00;
+  color: #fff;
+}
+
+.delete-button {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  .create-button {
+    width: 100%;
+  }
+}
